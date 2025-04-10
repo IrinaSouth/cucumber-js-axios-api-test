@@ -6,10 +6,10 @@ const axios = require("axios");
 let response;
 
 Given(/^I send a GET request to the Categories service with parameters$/, async (table) => {
-    const params = table.rowsHash();
+    const params = table.rowsHash(); // read URL parameters from the feature file
     let baseUrl = 'https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json'
     try {
-        response = await axios.get(baseUrl, {params});
+        response = await axios.get(baseUrl, {params}); // construct URL with parameters
     } catch (err) {
         throw new Error(`GET request to "${baseUrl}" failed with status ${err.response?.status || 'unknown'}`);
     }
