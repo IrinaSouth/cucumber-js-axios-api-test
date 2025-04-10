@@ -32,7 +32,7 @@ Then(/^The response contains the following key-value data$/, function(table) {
     expect(response.data).to.deep.include(expected);
 });
 
-Then('The response should contain a Promotion named {string} with a Description containing {string}', function (name, expectedText) {
+Then('The response contains a Promotion named {string} with a Description containing {string}', function (name, expectedText) {
     const promotions = response.data.Promotions;
 
     const promo = promotions.find(p => p.Name === name);
