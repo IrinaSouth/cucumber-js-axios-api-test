@@ -1,0 +1,12 @@
+{
+  "name": "example-api-test",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx cucumber-js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "axios": "^1.8.4",
+    "chai": "^5.2.0"
+  }
+}
