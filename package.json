@@ -2,7 +2,7 @@
   "name": "example-api-test",
   "version": "1.0.0",
   "scripts": {
-    "test": "npx cucumber-js"
+    "test": "npx cucumber-js --format progress-bar --format \"html\":\"cucumber-report.html\""
   },
   "devDependencies": {
     "@cucumber/cucumber": "^11.2.0",
