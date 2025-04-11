@@ -37,7 +37,7 @@ Then('The response contains a Promotion named {string} with a Description contai
 
     const promo = promotions.find(p => p.Name === name);
 
-    expect(promo, 'Promotion with Name="${name}" not found').to.exist;
-    expect(promo.Description, 'Description for Promotion "${name}" not found').to.exist;
-    expect(promo.Description).to.include(expectedText);
+    expect(promo, `Promotion with Name "${name}" not found`).to.exist;
+    expect(promo.Description, `Description for Promotion "${name}" not found`).to.exist;
+    expect(promo.Description).to.equal(expectedText);
 });

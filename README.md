@@ -32,6 +32,7 @@ This particular example demonstrates the use of a Cucumber data table and parame
 ### Improvements? 
 
 In the future as the number of tests increase, I would recommend to use config files and/or env. variables. Those could be useful to store constants like baseUrls. 
-Use world.js with a shared context object that exists for the duration of a scenario. It lets you attach and access data between steps.  
+Use world.js with a shared context object that exists for the duration of a scenario. It lets you attach and access data between steps. 
+Typescript could be also used to improve strict typing and code quality. 
 
 
