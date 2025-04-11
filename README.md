@@ -33,6 +33,7 @@ This particular example demonstrates the use of a Cucumber data table and parame
 
 In the future as the number of tests increase, I would recommend to use config files and/or env. variables. Those could be useful to store constants like baseUrls. 
 Use world.js with a shared context object that exists for the duration of a scenario. It lets you attach and access data between steps. 
-Typescript could be also used to improve strict typing and code quality. 
+Typescript could be also used to improve strict typing and code quality.
+Ideally OpenAPI file with API description should be introduced as API grows. OpenAPI codegen can be used to safely generate API client code for quality and consistency across API calls.   
 
 
