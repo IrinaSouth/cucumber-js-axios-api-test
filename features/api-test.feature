@@ -1,4 +1,4 @@
-Feature: Some API Test
+Feature: Example API Test
 
   Scenario: Check response for acceptance criteria
     Given I send a GET request to the Categories service with parameters
