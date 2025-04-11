@@ -1,7 +1,7 @@
 Feature: Example API Test
 
   Scenario: Check response for acceptance criteria
-    Given I send a GET request to the Categories service with parameters
+    Given I request data from the Categories service with parameters
       | catalogue | false |
     Then The response contains the following key-value data
       | Name      | Carbon credits |

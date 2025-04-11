@@ -5,7 +5,7 @@ const axios = require("axios");
 
 let response;
 
-Given(/^I send a GET request to the Categories service with parameters$/, async (table) => {
+Given(/^I request data from the Categories service with parameters$/, async (table) => {
     const params = table.rowsHash(); // read URL parameters from the feature file
     let baseUrl = 'https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json'
     try {
